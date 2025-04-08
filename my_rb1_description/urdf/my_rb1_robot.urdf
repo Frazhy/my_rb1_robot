@@ -1,5 +1,50 @@
 <?xml version="1.0"?>
 <robot name="rb1_robot">
+
+    <gazebo reference="base_link">
+        <material>Gazebo/Blue</material>
+    </gazebo>
+
+    <gazebo reference="left_wheel">
+        <mu1>0.8</mu1>
+        <mu2>0.8</mu2>
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+    <gazebo reference="right_wheel">
+        <mu1>0.8</mu1>
+        <mu2>0.8</mu2>
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+    <gazebo reference="base_link_front_caster_joint">
+        <preserveFixedJoint>true</preserveFixedJoint>
+    </gazebo>
+
+    <gazebo reference="base_link_back_caster_joint">
+        <preserveFixedJoint>true</preserveFixedJoint>
+    </gazebo>
+
+    <gazebo reference="front_caster">
+        <mu1>0</mu1>
+        <mu2>0</mu2>
+        <material>Gazebo/White</material>
+    </gazebo>
+
+    <gazebo reference="back_caster">
+        <mu1>0</mu1>
+        <mu2>0</mu2>
+        <material>Gazebo/White</material>
+    </gazebo>
+
+    <gazebo reference="base_link_front_laser_joint">
+        <preserveFixedJoint>true</preserveFixedJoint>
+    </gazebo>
+
+    <gazebo reference="front_laser">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
     <link name="base_link">
         <inertial>
             <mass value="15.5"/>

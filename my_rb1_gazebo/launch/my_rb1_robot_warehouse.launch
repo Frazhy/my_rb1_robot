@@ -18,8 +18,8 @@
 
     <param name="robot_description" command="cat '$(find my_rb1_description)/urdf/my_rb1_robot.urdf'" />
     
-    <arg name="x" default="0"/>
-    <arg name="y" default="0"/>
+    <arg name="x" default="-0.35"/>
+    <arg name="y" default="-1.35"/>
     <arg name="z" default="0.5"/>
     <arg name="model_name" default="model"/>
     
